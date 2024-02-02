@@ -10,8 +10,7 @@ const repeatString = function (string, num) {
   return str;
 };
 
-const number = Math.floor(Math.random() * 1000);
-repeatString("hey", number);
+repeatString("", 10);
 
 // Do not edit below this line
 module.exports = repeatString;
