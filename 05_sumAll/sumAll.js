@@ -1,6 +1,15 @@
 const sumAll = function (num1, num2) {
   let sum = 0;
-  for (let i = num1; i <= num2; i++) {
+  let min;
+  let max;
+  if (num1 > num2) {
+    min = num2;
+    max = num1;
+  } else {
+    min = num1;
+    max = num2;
+  }
+  for (let i = min; i <= max; i++) {
     sum += i;
   }
   return sum;
